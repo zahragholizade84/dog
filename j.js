@@ -1,21 +1,19 @@
-function getdog(){
-    fetch("https://api.palcoffee.ir/dogs/fact")
-    .then(res => res.json())
-    .then(data =>
-        document.getElementById("img").src =
-        data.message
-    )
-}
-fetch("https://dog.ceo/api/breeds/image/random")
+fetch("https://api.palcoffee.ir/dogs/fact")
 .then(res => res.json())
-.then(data =>
+.then(data => {
+    console.log(data);
     document.getElementById("result").innerText =
-    data.fact
-)
-.catch(err =>
-    document.getElementById("result").innerText =
-    undefined
-)
+        JSON.stringify(data);
+})
+.catch(err => {
 
-getdog();
-document.getElementById("btn").addEventListener("click",getdog)
+    document.getElementById("result").innerText =
+        "ERROR";
+});
+//fetch('https://dog.ceo/api/breeds/image/random')
+ // .then(res => res.json())
+  //.then(data => {
+  //  console.log(data.message); // لینک عکس
+   // document.getElementById("img").src =
+   // data.message;
+ // });
