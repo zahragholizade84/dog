@@ -1,0 +1,41 @@
+body{
+    background-color: #f8f4f1;
+}
+#title{
+    color: #6d213c;
+}
+#result{
+    color: #2d2d2d;
+}
+#btn{
+    background-color: #b87333;
+    z-index: 1;
+}
+#img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+#loder{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top: 5px solid #ddd;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    
+}
+@keyframes spin   {
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+    
+}
