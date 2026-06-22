@@ -1,0 +1,25 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "main": "j.js",
+  "scripts": {
+   "dev":"vite",
+   "build":"vite build",
+   "preview":"vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahragholizade84/dog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zahragholizade84/dog/issues"
+  },
+  "homepage": "https://github.com/zahragholizade84/dog#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}
